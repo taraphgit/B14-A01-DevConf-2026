@@ -108,6 +108,7 @@ body {
 .speakers-section{
     max-width:1320px;
     margin:80px auto 0;
+    text-align: center;
 }
 
 .speakers-section h2 {
