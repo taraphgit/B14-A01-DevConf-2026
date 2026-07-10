@@ -9,8 +9,8 @@
 body {
     background-color: #ffffff;
     color: #333333;
-    width: 1200px; /* Fixed width as requested (non-responsive) */
-    margin: 0 auto;
+    width:1320px;
+    margin:0 auto;
 }
 
 /* Common Button Style */
