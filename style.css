@@ -200,6 +200,7 @@ body {
     gap: 24px;
     /* align-items: stretch; */
     max-width: 1320px;
+    margin: 0 auto;
 }
 
 .price-card {
