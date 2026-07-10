@@ -337,8 +337,13 @@ body {
 
 
 /* missing */
-.missing-section{
+/* .missing-section{
     padding: 80px 0;
+} */
+
+.missing-box{
+    max-width:1320px;
+    margin:0 auto;
 }
 
 .missing-box{
