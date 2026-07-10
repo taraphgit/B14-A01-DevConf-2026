@@ -67,7 +67,7 @@ body {
 .hero-content {
     text-align: center;
     margin-top: 100px;
-    max-width: 800px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -99,7 +99,9 @@ body {
 
 /* Speakers Section */
 .speakers-section {
-    padding: 80px 80px;
+    max-width: 1320px;
+    /* padding: 80px 80px; */
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -109,14 +111,23 @@ body {
     color: #000000;
 }
 
-.speakers-grid {
-    display: flex; /* column layout side by side */
-    justify-content: space-between;
-    gap: 20px;
+
+.speakers-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
 
+/* etabaad */
+/* .speakers-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+} */
+
 .speaker-card {
-    flex: 1;
+    /* flex: 1; */
+    width: 100%;
     background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
@@ -127,7 +138,7 @@ body {
 
 .speaker-card img {
     width: 100%;
-    height: 180px;
+    height: 312px;
     object-fit: cover;
 }
 
@@ -157,7 +168,9 @@ body {
 
 /* Pricing Section */
 .pricing-section {
-    padding: 60px 80px;
+    /* padding: 60px 80px; */
+    margin-top: 80px;
+    margin-bottom: 80px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -174,15 +187,19 @@ body {
 }
 
 .pricing-grid {
-    display: flex; /* column layout */
+    /* display: flex; 
     justify-content: space-between;
-    gap: 25px;
-    align-items: stretch;
+    gap: 24px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    /* align-items: stretch; */
+    max-width: 1320px;
 }
 
 .price-card {
     flex: 1;
-    background: #ffffff;
+    background: #fdfeff;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     padding: 35px 25px;
@@ -192,13 +209,13 @@ body {
 }
 
 .price-card.featured {
-    background: #0f172a;
-    color: #ffffff;
+    background: #0b1221;
+    color: #6b757e;
     border: none;
 }
 
 .plan-type {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #666666;
@@ -211,7 +228,7 @@ body {
 }
 
 .price {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     color: #111111;
 }
@@ -221,14 +238,14 @@ body {
 }
 
 .per-person {
-    font-size: 12px;
-    color: #666666;
+    font-size: 14px;
+    color: #1544ff;
     margin-bottom: 30px;
     display: block;
 }
 
 .featured .per-person {
-    color: #94a3b8;
+    color: #d7e7ff;
 }
 
 .price-card ul {
@@ -238,9 +255,9 @@ body {
 }
 
 .price-card ul li {
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 12px;
-    color: #4b5563;
+    color: #687e9e;
     position: relative;
     padding-left: 20px;
 }
@@ -253,7 +270,7 @@ body {
 }
 
 .featured .price-card ul li {
-    color: #cbd5e1;
+    color: #c0d1e5;
 }
 
 .featured .price-card ul li::before {
@@ -261,11 +278,20 @@ body {
 }
 
 /* Card Buttons */
-.outline-btn {
+/* .outline-btn {
     border: 1px solid #e5e7eb;
     color: #2563eb;
     background: transparent;
     width: 100%;
+} */
+ .outline-btn,
+.solid-btn{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px;
+    outline: #2563eb solid ;
+    color: #000000;
 }
 
 .outline-btn:hover {
@@ -291,7 +317,7 @@ body {
     text-align: center;
 }
 
-.missing-box h2 {
+/* .missing-box h2 {
     color: #a855f7;
     font-size: 28px;
     margin-bottom: 10px;
@@ -301,6 +327,43 @@ body {
     color: #c084fc;
     font-size: 16px;
     font-weight: bold;
+} */
+
+
+/* missing */
+.missing-section{
+    padding: 80px 0;
+}
+
+.missing-box{
+    background: #0f172a;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.missing-box h2{
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.missing-box p{
+    max-width: 620px;
+    margin: 0 auto 32px;
+    color: #cbd5e1;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.missing-btn{
+    background: #2563eb;
+    color: #ffffff;
+    padding: 14px 36px;
+}
+
+.missing-btn:hover{
+    background: #1d4ed8;
 }
 
 /* Footer Section */
@@ -308,9 +371,10 @@ body {
     background-color: #0f172a;
     color: #94a3b8;
     padding: 30px 80px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 16px;
     border-top: 1px solid #1e293b;
 }
 
@@ -323,4 +387,3 @@ body {
 .footer-links a:hover {
     color: #ffffff;
 }
-
