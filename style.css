@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    transition: background 0.3s ease;
+    /* transition: background 0.3s ease; */
 }
 
 /* Header & Hero Section */
@@ -98,11 +98,16 @@ body {
 }
 
 /* Speakers Section */
-.speakers-section {
+/* .speakers-section {
     max-width: 1320px;
-    /* padding: 80px 80px; */
+  
     margin-top: 80px;
     text-align: center;
+} */
+
+.speakers-section{
+    max-width:1320px;
+    margin:80px auto 0;
 }
 
 .speakers-section h2 {
