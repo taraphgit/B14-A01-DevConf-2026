@@ -320,7 +320,8 @@ body {
 
 /* Something Missing Section */
 .missing-section {
-    padding: 40px 80px;
+    /* padding: 40px; */
+    margin-bottom: 80px;
 }
 
 .missing-box {
@@ -329,6 +330,7 @@ body {
     border-radius: 12px;
     padding: 60px;
     text-align: center;
+    max-width: 1320px;
 }
 
 /* .missing-box h2 {
@@ -351,14 +353,14 @@ body {
 
 .missing-box{
     max-width:1320px;
-    margin:0 auto;
+    margin:0;
 }
 
 .missing-box{
     background: #0f172a;
     color: #ffffff;
     border-radius: 20px;
-    padding: 70px 40px;
+    padding: 70px;
     text-align: center;
 }
 
@@ -368,8 +370,8 @@ body {
 }
 
 .missing-box p{
-    max-width: 620px;
-    margin: 0 auto 32px;
+    max-width: 1320px;
+    margin: auto;
     color: #cbd5e1;
     line-height: 1.7;
     font-size: 16px;
@@ -377,6 +379,7 @@ body {
 
 .missing-btn{
     background: #2563eb;
+    margin-top: 20px;
     color: #ffffff;
     padding: 14px 36px;
 }
