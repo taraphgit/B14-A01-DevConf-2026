@@ -275,12 +275,20 @@ body {
     color: #2563eb;
 }
 
-.featured .price-card ul li {
+/* .featured .price-card ul li {
     color: #c0d1e5;
+} */
+.price-card.featured ul li{
+    color:#c0d1e5;
 }
 
-.featured .price-card ul li::before {
+
+/* .featured .price-card ul li::before {
     color: #38bdf8;
+} */
+
+.price-card.featured ul li::before{
+    color:#38bdf8;
 }
 
 /* Card Buttons */
